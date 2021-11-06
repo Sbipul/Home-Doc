@@ -1,0 +1,274 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+p{
+    text-align: justify;
+}
+/*================================== mini nav area start===============================  */
+.miniNav a{
+    text-decoration: none;
+    margin-right: 2rem;
+}
+.customBg{
+    background: #44a2ff;
+}
+@media only screen and (max-width: 600px) {
+    .mainMiniNav{
+        display: none;
+    }
+  }
+/*=====================================mini nav area end==================================  */
+
+
+
+
+
+
+
+
+/*===================================== banner area start =================================== */
+.banner{
+    width: 100%;
+    height: 90vh;
+    padding: 15px 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bannerBtn {
+    background: #007eff;
+    border: 0;
+    padding: 11px;
+    color: white;
+    border-radius: 4px;
+    margin: 11px 0;
+}
+.bannerHeading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.passage{
+    width: 55%;
+    color: rgb(0, 44, 109);
+    margin: 7px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.bannerBg {
+    background: #f8f8f8;
+}
+@media only screen and (max-width: 600px) {
+    .passage{
+        width: 100%;
+    }
+    .banner{
+        height: 100vh;
+    }
+    .bannerText{
+        padding: 10px;
+    }
+    .bannerHeading{
+        font-size: 2rem;
+    }
+  }
+/*===================================== banner area end =================================== */
+
+
+
+
+
+
+
+
+/*===================================== service area start =================================== */
+.service{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.service::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    z-index: -1;
+    width: 29%;
+    transition: 2s;
+    background: rgb(5, 168, 173);
+    clip-path: polygon(16% 0, 0% 100%, 100% 65%);
+    top: 0;
+    left: 15%;
+}
+.service:hover::after{
+    transform: scale(1.3) rotate(180deg);
+    background: white;
+}
+.service::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    z-index: -1;
+    width: 10%;
+    transition: 1s;
+    background: rgb(0, 197, 105);
+    /* clip-path: circle(13.4% at 50% 50%); */
+    /* clip-path: polygon(3% 41%, 15% 43%, 16% 61%, 0 60%); */
+    clip-path: polygon(28% 41%, 63% 38%, 61% 60%, 34% 60%);
+    top: 0;
+    left: 15%;
+}
+.service:hover::before{
+    transform: scale(1.3);
+    /* clip-path: circle(40.0% at 51% 53%); */
+    clip-path: polygon(0 23%, 78% 23%, 60% 70%, 0 70%);
+    left: 0%;
+    width: 100%;
+}
+.servicesHeading:hover{
+    color: rgb(53, 53, 53);
+}
+.servicesHeading{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 2s;
+    color: rgb(0, 89, 255);
+}
+.cardIcon {
+    font-size: 38px;
+    text-align: center;
+    border-radius: 100%;
+    background: white;
+    top: -35px;
+    left: 40%;
+    height: 70px;
+    transition: 1s;
+    width: 70px;
+    color: #0072ff;
+}
+.card:hover .cardIcon{
+    transform: rotate(360deg) scale(1.5);
+}
+.card{
+    box-shadow: 7px 7px 7px rgb(133, 133, 133), -7px -7px 7px rgb(212, 212, 212);;
+}
+@media only screen and (max-width: 600px) {
+    .service::after{
+        width: 100%;
+        left: 0%;
+    }
+  }
+/*===================================== service area end =================================== */
+
+
+
+
+
+
+
+
+
+
+/*===================================== signup area start =================================== */
+.signImg{
+      width: 100%;
+      margin: 0 auto;  
+      height: 400px;
+}
+.signImg img{
+      object-fit: cover;
+}
+.forM {
+    padding: 32px;
+    border-left: none;
+    position: relative;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px rgb(221, 221, 221);
+    overflow: hidden;
+    border-radius: 12px;
+}
+.tik{
+    height: 60%;
+    width: 20%;
+    position: absolute;
+    bottom:-19%;
+    right: 0;
+    content: "";
+}
+@media only screen and (max-width: 600px) {
+    .signImg{
+        width: 100%;
+    }
+    .forM {
+        border: 7px solid #00bdff;
+        padding: 13px;
+        border-top: none;
+    }
+  }
+/*===================================== signup area end =================================== */
+
+
+
+
+
+/*===================================== feature area start =================================== */
+.featureImg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    border: 2px solid tomato;
+    overflow: hidden;
+}
+
+.featureImg2{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/*===================================== feature area end =================================== */
+
+
+
+
+/*===================================== carousel area start =================================== */
+.carouselDiv{
+    height: 45vh;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 50px;
+    clip-path: circle(21.4% at 52% 22%);
+}
+.clipReview{
+    position: relative;
+    z-index: 10;
+    color: black;
+
+}
+/* animations  */
+/* animation: bar 3s  infinite ;
+
+@keyframes bar {
+	from {}
+	to {}
+} */
+/*===================================== feature area end =================================== */
+
+
+
+
+
+/*===================================== footer area start =================================== */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+.footer{
+    background: #44a2ff;
+    color: white;
+}
+/*===================================== footer area end =================================== */
+
+
+
+
+
+
