@@ -50,7 +50,7 @@ const Login = () => {
                         </div>
                     </div>
                     <button onClick={handleLogin} type="submit" className="btn btn-primary">Submit</button>
-                    <button onClick={handleGoogleLogin} className="btn btn-success m-2">google Sign in</button>
+                    <button onClick={handleGoogleLogin} className="btn btn-success m-2">Google Sign in</button>
                     <div>
                         <p>New Here?</p><Link to='/sign'>
                             <button type="submit" className="btn btn-info">Register Now</button>
